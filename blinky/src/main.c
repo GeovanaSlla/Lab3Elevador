@@ -24,6 +24,8 @@
 #include "driverleds.h" // device drivers
 #include "cmsis_os2.h" // CMSIS-RTOS
 
+#include "uart_config.h"
+
 osThreadId_t tid_phaseA;                /* Thread id of thread: phase_a      */
 osThreadId_t tid_phaseB;                /* Thread id of thread: phase_b      */
 osThreadId_t tid_phaseC;                /* Thread id of thread: phase_c      */
@@ -134,15 +136,15 @@ void clock (void *argument) {
  *      Main: Initialize and start RTX Kernel
  *---------------------------------------------------------------------------*/
 void app_main (void *argument) {
-  tid_phaseA = osThreadNew(phaseA, NULL, NULL);
-  tid_phaseB = osThreadNew(phaseB, NULL, NULL);
-  tid_phaseC = osThreadNew(phaseC, NULL, NULL);
-  tid_phaseD = osThreadNew(phaseD, NULL, NULL);
-  tid_clock  = osThreadNew(clock,  NULL, NULL);
-
-  phases_mut_id = osMutexNew(&Phases_Mutex_attr);
-  
-  osThreadFlagsSet(tid_phaseA, 0x0001);          /* set signal to phaseA thread   */
+//  tid_phaseA = osThreadNew(phaseA, NULL, NULL);
+//  tid_phaseB = osThreadNew(phaseB, NULL, NULL);
+//  tid_phaseC = osThreadNew(phaseC, NULL, NULL);
+//  tid_phaseD = osThreadNew(phaseD, NULL, NULL);
+//  tid_clock  = osThreadNew(clock,  NULL, NULL);
+//
+//  phases_mut_id = osMutexNew(&Phases_Mutex_attr);
+//  
+//  osThreadFlagsSet(tid_phaseA, 0x0001);          /* set signal to phaseA thread   */
 
   osDelay(osWaitForever);
   while(1);
@@ -153,7 +155,10 @@ int main (void) {
   // System Initialization
   SystemInit();
   LEDInit(LED1|LED2|LED3|LED4);
-
+  uartInit();
+  uint8_t teste[]="teste123456789101112131415161718";
+  //uint8_t teste[]="teste";
+  uartSend(teste,sizeof(teste));
   osKernelInitialize();                 // Initialize CMSIS-RTOS
   osThreadNew(app_main, NULL, NULL);    // Create application main thread
   if (osKernelGetState() == osKernelReady) {
