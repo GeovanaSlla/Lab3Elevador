@@ -1,0 +1,9 @@
+*.o
+*.ipch
+*.bin
+*.out
+*.sim
+*.map
+*.pbi
+*.xcl
+*.a
