@@ -13,6 +13,7 @@
 #define NUM_ANDARES 15
 
 typedef enum movimento_e {PARADO, DESCENDO, SUBINDO} movimento_e;
+typedef enum elevador_e {ESQUERDA = 1, CENTRAL, DIREITA} elevador_e;
 
 typedef struct elevador_t
 {
