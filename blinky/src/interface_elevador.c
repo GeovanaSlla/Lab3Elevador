@@ -6,13 +6,17 @@
 #define CARACTER_FINALIZADOR '\r'
 
 #define RX_BUF_SIZE 32
+#define TX_BUF_SIZE 32
 uint8_t rxBuf[RX_BUF_SIZE];
+uint8_t txBuf[TX_BUF_SIZE];
 uint8_t rxWrIterator = 0;
-//uint8_t rxMsgCompleta_flag = 0;
+uint8_t txWrIterator = 0;
+uint8_t rxMsgCompleta_flag = 0;
 
 osThreadId_t threadInterfaceElevadorID;
 
 osMessageQueueId_t queueEventosElevadorID;
+osMessageQueueId_t queueComandosElevadorID;
 
 void        threadInterfaceElevador(void* Arg);
 elevador_e  getElevador(uint8_t c);
@@ -25,18 +29,18 @@ uint8_t interfaceElevadorInit()
   if(threadInterfaceElevadorID == NULL)
     return 0;
 
-  queueEventosElevadorID    = osMessageQueueNew(NUMERO_MAX_EVENTOS, sizeof(eventoElevador_t), NULL);
+  queueEventosElevadorID = osMessageQueueNew(NUMERO_MAX_EVENTOS, sizeof(eventoElevador_t), NULL);
   if(queueEventosElevadorID == NULL)
+    return 0;
+
+  queueComandosElevadorID = osMessageQueueNew(NUMERO_MAX_COMANDOS, sizeof(comandoElevador_t), NULL);
+  if(queueComandosElevadorID == NULL)
     return 0;
 
   uartInit(threadInterfaceElevadorID);
   uint8_t teste[]="dr";
-  uint8_t teste1[]="df";
-  uint8_t teste2[]="dd";
   //uint8_t teste[]="teste";
-  uartSend(teste,sizeof(teste)-1);
-  uartSend(teste1,sizeof(teste1)-1);
-  uartSend(teste2,sizeof(teste2)-1);
+  uartSend(teste,sizeof(teste));
 
   return 1;
 }
@@ -51,19 +55,35 @@ void threadInterfaceElevador(void* Arg)
 
       if(UART_RX_FLAG & flag)
       {
-        uint8_t c = uartGetChar();
-        if((c > 0) && (c != '\n'))       
-        {
-           rxBuf[rxWrIterator++] = c;
-           if(c == CARACTER_FINALIZADOR)
-            //rxMsgCompleta_flag = 1;
-            {
-              interpretaEvento();
-              rxWrIterator = 0;
-            }
-        } 
-        
         osThreadFlagsClear(UART_RX_FLAG);
+        uint8_t c;
+        do
+        {
+          c = uartGetChar();
+          if((c > 0) && (c != '\n'))
+          {
+             rxBuf[rxWrIterator++] = c;
+             if(c == CARACTER_FINALIZADOR)
+                rxMsgCompleta_flag = 1;
+              //{
+               // rxMsgCompleta_flag = 1;
+                //interpretaEvento();
+                //rxWrIterator = 0;
+              //}
+          } 
+        }while((c > 0) && (rxWrIterator < RX_BUF_SIZE));
+        
+        if(rxMsgCompleta_flag)
+        {
+          interpretaEvento();
+          rxMsgCompleta_flag = 0;
+          rxWrIterator = 0;
+        }
+        
+        if(rxWrIterator >= RX_BUF_SIZE) //ERRO - limpa estouro do buffer
+        {
+          rxWrIterator = 0;          
+        }                        
       }
       if(UART_TX_FLAG & flag)
       {
@@ -81,7 +101,7 @@ void interpretaEvento()
 {
         eventoElevador_t evento = {NULL,NULL,NULL};
         uint8_t i = 0;
-        while(i <= rxWrIterator)//mais de um comando
+        while((i <= rxWrIterator))//le todo o buffer
         {          
           do{
               evento.elevador = getElevador(rxBuf[i++]);               
@@ -151,7 +171,7 @@ void interpretaEvento()
                         //todo: colocar na fila de msg
                         osMessageQueuePut(queueEventosElevadorID,&evento,0,osWaitForever);
                     }              
-                    else
+                    else//erro
                     {
                       break;
                     }
@@ -173,13 +193,13 @@ void interpretaEvento()
                   //todo: colocar na fila de msg
                   osMessageQueuePut(queueEventosElevadorID,&evento,0,osWaitForever);
                 }
-                else
+                else//erro
                 {
                   break;
                 }
                                   
               }
-              break;                                  
+             // break;                                  
                                 
             }
           } 

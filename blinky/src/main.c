@@ -43,11 +43,11 @@ void app_main (void *argument) {
   
 
   interfaceElevadorInit();
-
+  uint8_t i =0;
 while(1)
 {
   osMessageQueueGet(queueEventosElevadorID,&event_aux,NULL,osWaitForever);
-  uint8_t i =0;
+
   i++;
 }
   osDelay(osWaitForever);
