@@ -30,33 +30,20 @@ void uartInit(osThreadId_t threadDelegada_aux)
   UARTConfigSetExpClk(UART0_BASE, SystemCoreClock, 115200,(UART_CONFIG_WLEN_8 | UART_CONFIG_STOP_ONE | UART_CONFIG_PAR_NONE));   
   
   threadDelegada = threadDelegada_aux;
-//Op��es de interrup��o
-//UART_INT_9BIT - 9-bit Address Match interrupt
-//UART_INT_OE - Overrun Error interrupt
-//UART_INT_BE - Break Error interrupt
-//UART_INT_PE - Parity Error interrupt
-//UART_INT_FE - Framing Error interrupt
-//UART_INT_RT - Receive Timeout interrupt
-//UART_INT_TX - Transmit interrupt
-//UART_INT_RX - Receive interrupt
-//UART_INT_DSR - DSR interrupt
-//UART_INT_DCD - DCD interrupt
-//UART_INT_CTS - CTS interrupt
-//UART_INT_RI - RI interrupt
   
-uint32_t fifoRX, fifoTX;
-UARTFIFOLevelGet(UART0_BASE,&fifoTX,&fifoRX);
+  uint32_t fifoRX, fifoTX;
+  UARTFIFOLevelGet(UART0_BASE,&fifoTX,&fifoRX);
 
-//UARTFIFOEnable(UART0_BASE);
-UARTFIFODisable(UART0_BASE);
-//UARTFIFOLevelSet(UART0_BASE,UART_FIFO_TX4_8,UART_FIFO_RX1_8);
-//UARTFIFOLevelGet(UART0_BASE,&fifoTX,&fifoRX);
+  //UARTFIFOEnable(UART0_BASE);
+  UARTFIFODisable(UART0_BASE);
+  //UARTFIFOLevelSet(UART0_BASE,UART_FIFO_TX4_8,UART_FIFO_RX1_8);
+  //UARTFIFOLevelGet(UART0_BASE,&fifoTX,&fifoRX);
 
-UARTIntRegister(UART0_BASE,UART0_IRQHandler);//Habilitar interrup��es de tx e rx
-UARTIntEnable(UART0_BASE,UART_INT_TX|UART_INT_RX); 
+  UARTIntRegister(UART0_BASE,UART0_IRQHandler);//Habilitar interrup��es de tx e rx
+  UARTIntEnable(UART0_BASE,UART_INT_TX|UART_INT_RX); 
   
 }
-//
+
 /* uint32_t uartRead(uint8_t* buf, uint32_t size)
 {
     int32_t c = UARTCharGetNonBlocking(UART0_BASE);
@@ -84,7 +71,8 @@ void  uartPutChar(uint8_t c)
 {
   UARTCharPut(UART0_BASE, c);
 }
- uint32_t uartSend(uint8_t* buf, uint32_t size)
+
+ /*uint32_t uartSend(uint8_t* buf, uint32_t size)
 {
   //  int32_t c = UARTCharGetNonBlocking(UART0_BASE);
     uint32_t i = 0;
@@ -105,7 +93,7 @@ UARTCharPut(UART0_BASE, buf[i]);
       return 1;
 
     return 0;
-} 
+}*/
 
 //Callback interrupção da Uart0
 void UART0_IRQHandler()
@@ -117,17 +105,9 @@ void UART0_IRQHandler()
     osThreadFlagsSet(threadDelegada,UART_TX_FLAG);
     UARTIntClear(UART0_BASE,UART_INT_TX);  
   }
-uint8_t state=0;
   if(uartStatus & UART_INT_RX)
   {
-    //todo: delegar interrupt
-/*     uint8_t buf_dummy[10];
-    uint32_t size = uartRead(buf_dummy,10);
-    state ^= LED2;
-    LEDWrite(LED2, state); */
     osThreadFlagsSet(threadDelegada,UART_RX_FLAG);
-    //todo: delegar interrupt
-    
     UARTIntClear(UART0_BASE,UART_INT_RX);
   }
 }

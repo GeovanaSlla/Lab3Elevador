@@ -9,7 +9,8 @@
 
 
 typedef enum tipo_e {PORTA_A = 1, PORTA_F, BT_INT, BT_EXT, POSICAO} tipo_e;
-typedef enum comando_e {ABRE_PORTA = 1, FECHA_PORTA, SOBE, DESCE, ACENDE_BT, APAGA_BT} comando_e;
+typedef enum comando_e {INICIALIZA = 1, ABRE_PORTA, FECHA_PORTA, SOBE, DESCE, PARA, ACENDE_BT, APAGA_BT} comando_e;
+
 typedef struct eventoElevador_t
 {
   elevador_e elevador;

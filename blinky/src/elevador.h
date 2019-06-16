@@ -11,6 +11,8 @@
 #define NAO_DEVE_PARAR false
 #define NUM_ELEVADORES 3
 #define NUM_ANDARES 15
+#define BOTAO_TERREO 'a'
+#define BOTAO_ULTIMO_ANDAR (BOTAO_TERREO + NUM_ANDARES)
 
 typedef enum movimento_e {PARADO, DESCENDO, SUBINDO} movimento_e;
 typedef enum elevador_e {ESQUERDA = 1, CENTRAL, DIREITA} elevador_e;
