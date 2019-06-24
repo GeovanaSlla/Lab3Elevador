@@ -2,7 +2,7 @@
 #define __INTERFACE_ELEVADOR_H__
 
 #include "elevador.h"
-
+#include "cmsis_os2.h"
 #define NUMERO_MAX_EVENTOS  5
 #define NUMERO_MAX_COMANDOS 5
 #define COMANDO_FLAG     0x1 << 2
@@ -24,6 +24,9 @@ typedef struct comandoElevador_t
   comando_e comando;
   uint8_t valor;
 } comandoElevador_t;
+
+extern osMessageQueueId_t queueEventosElevadorID;
+extern osMessageQueueId_t queueComandosElevadorID;
 
 uint8_t interfaceElevadorInit();
 

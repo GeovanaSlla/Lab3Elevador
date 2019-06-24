@@ -1,23 +1,23 @@
-"C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\src\main.c"
+"E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\src\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\src
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\src
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\..\..
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\..\..
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\driverlib
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\driverlib
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\Device\ARM\ARMCM4\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\Device\ARM\ARMCM4\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\CMSIS\RTOS2\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\CMSIS\RTOS2\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\CMSIS\RTOS2\RTX\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\CMSIS\RTOS2\RTX\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\blinky\..\CMSIS\RTOS2\RTX\Library\IAR\IDE
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\blinky\..\CMSIS\RTOS2\RTX\Library\IAR\IDE
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\CMSIS\Core\Include
 -I
@@ -27,19 +27,19 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\inc\c
 -I
-C:\Users\geo_s\Desktop
+E:\UTFPR\9º Período\Embarcados\Projetos
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\driverlib
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\driverlib
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\Device\ARM\ARMCM4\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\Device\ARM\ARMCM4\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\CMSIS\RTOS2\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\CMSIS\RTOS2\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\CMSIS\RTOS2\RTX\Include
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\CMSIS\RTOS2\RTX\Include
 -I
-C:\Users\geo_s\Desktop\Tiva_RTOS2_IAR8\Tiva_RTOS2_IAR8\CMSIS\RTOS2\RTX\Library\IAR\IDE
+E:\UTFPR\9º Período\Embarcados\Projetos\Lab3Elevador\Lab3Elevador\CMSIS\RTOS2\RTX\Library\IAR\IDE
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.2\arm\CMSIS\Core\Include
 -I

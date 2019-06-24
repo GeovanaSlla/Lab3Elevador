@@ -25,8 +25,9 @@
 #include "cmsis_os2.h" // CMSIS-RTOS
 
 #include "interface_elevador.h"
-extern osMessageQueueId_t queueEventosElevadorID;
-eventoElevador_t event_aux;
+#include "controleElevador.h"
+
+//eventoElevador_t event_aux;
 /*----------------------------------------------------------------------------
  *      Main: Initialize and start RTX Kernel
  *---------------------------------------------------------------------------*/
@@ -42,14 +43,20 @@ void app_main (void *argument) {
 //  osThreadFlagsSet(tid_phaseA, 0x0001);          /* set signal to phaseA thread   */
   
 
-  interfaceElevadorInit();
-  uint8_t i =0;
-while(1)
-{
-  osMessageQueueGet(queueEventosElevadorID,&event_aux,NULL,osWaitForever);
 
-  i++;
-}
+  uint8_t retorno = controleElevadorInit();
+  retorno = retorno && interfaceElevadorInit();
+  if(retorno == 0)
+  {
+    while(1);
+  }
+//uint8_t i =0;
+//while(1)
+//{
+//  osMessageQueueGet(queueEventosElevadorID,&event_aux,NULL,osWaitForever);
+//
+//  i++;
+//}
   osDelay(osWaitForever);
   while(1);
 }
@@ -57,10 +64,7 @@ while(1)
 int main (void) {
 
   // System Initialization
-  SystemInit();
-  LEDInit(LED1|LED2|LED3|LED4);
-  
-  
+  SystemInit(); 
   osKernelInitialize();                 // Initialize CMSIS-RTOS
   osThreadNew(app_main, NULL, NULL);    // Create application main thread
   if (osKernelGetState() == osKernelReady) {

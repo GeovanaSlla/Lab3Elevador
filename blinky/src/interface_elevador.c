@@ -58,7 +58,7 @@ uint8_t interfaceElevadorInit()
   uartInit(threadInterfaceElevadorID);
   
 //testes de envio de comando
-  comandoElevador_t auxC;
+/*   comandoElevador_t auxC;
   auxC.elevador = CENTRAL;
   auxC.comando = INICIALIZA;
   osMessageQueuePut(queueComandosElevadorID,&auxC,0,osWaitForever);
@@ -71,7 +71,7 @@ uint8_t interfaceElevadorInit()
   osMessageQueuePut(queueComandosElevadorID,&auxC,0,osWaitForever);
   auxC.comando = ACENDE_BT;
   auxC.valor = 1;
-  osMessageQueuePut(queueComandosElevadorID,&auxC,0,osWaitForever);
+  osMessageQueuePut(queueComandosElevadorID,&auxC,0,osWaitForever); */
 //
   return 1;
 }

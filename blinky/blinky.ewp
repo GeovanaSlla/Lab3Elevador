@@ -283,7 +283,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>11111110</state>
+                    <state>00000000</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -369,7 +369,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -378,7 +378,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CompilerMisraRules98</name>
@@ -1045,13 +1045,25 @@
         </settings>
     </configuration>
     <file>
-        <name>$PROJ_DIR$\src\driverleds.c</name>
+        <name>$PROJ_DIR$\src\controleElevador.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\src\driverleds.h</name>
+        <name>$PROJ_DIR$\src\controleElevador.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\..\driverlib\ewarm\Exe\driverlib.a</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\src\elevador.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\src\elevador.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\src\interface_elevador.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\src\interface_elevador.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\src\main.c</name>
