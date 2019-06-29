@@ -14,7 +14,7 @@
 
 typedef enum movimento_e {PARADO, DESCENDO, SUBINDO} movimento_e;
 typedef enum fluxo_e {DESEMBARQUE, NAO_DEVE_PARAR, EMBARQUE} fluxo_e;
-typedef enum elevador_e{ESQUERDA = 0, CENTRAL, DIREITA} elevador_e;
+typedef enum elevador_e{ESQUERDA, CENTRAL, DIREITA} elevador_e;
 
 typedef struct elevador_t
 {

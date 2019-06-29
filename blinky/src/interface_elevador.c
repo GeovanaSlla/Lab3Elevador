@@ -10,6 +10,10 @@
 #define RX_BUF_SIZE 32
 #define TX_BUF_SIZE 32
 
+#define INVALIDO  0xFF
+
+#define PRIO_INTERFACE  0x02
+
 uint8_t rxBuf[RX_BUF_SIZE];
 uint8_t txBuf[TX_BUF_SIZE];
 uint8_t rxWrIterator = 0;
@@ -36,14 +40,17 @@ uint8_t     getComandoChar(comando_e comando);
 uint8_t interfaceElevadorInit()
 {
   threadInterfaceElevadorID = osThreadNew(threadInterfaceElevador, NULL, NULL);
+  osThreadSetPriority(threadInterfaceElevadorID, PRIO_INTERFACE + 1);
   if(threadInterfaceElevadorID == NULL)
     return 0;
 
   threadInterpretaEventoID = osThreadNew(threadInterpretaEvento, NULL, NULL);
+  osThreadSetPriority(threadInterfaceElevadorID, PRIO_INTERFACE);
   if(threadInterpretaEventoID == NULL)
     return 0;
 
   threadMontaComandoID = osThreadNew(threadMontaComando, NULL, NULL);
+  osThreadSetPriority(threadInterfaceElevadorID, PRIO_INTERFACE);
   if(threadMontaComandoID == NULL)
     return 0;
 
@@ -137,15 +144,15 @@ void threadInterpretaEvento(void *Arg)
   {
     osThreadFlagsWait(0x00000001, osFlagsWaitAny, osWaitForever);
   //-------------------------------------------------------------//
-    eventoElevador_t evento = {NULL,NULL,NULL};
+    eventoElevador_t evento = {INVALIDO,INVALIDO,INVALIDO};
     uint8_t i = 0;
     while((i <= rxWrIterator))//le todo o buffer
     {          
       do{
           evento.elevador = getElevador(rxBuf[i++]);               
-      }while ((evento.elevador == NULL) && (i <= rxWrIterator));//procura um possível primeiro caracter; pode acabar achando um parametro
+      }while ((evento.elevador == INVALIDO) && (i <= rxWrIterator));//procura um possível primeiro caracter; pode acabar achando um parametro
 
-      if((evento.elevador != NULL) && (i <= rxWrIterator))//definiu um elevador e ainda tem caracteres     
+      if((evento.elevador != INVALIDO) && (i <= rxWrIterator))//definiu um elevador e ainda tem caracteres     
       {
         evento.tipo = getEvento(rxBuf[i]);
         if((evento.tipo == PORTA_A) || (evento.tipo == PORTA_F))
@@ -259,10 +266,10 @@ void threadMontaComando(void *Arg)       //ignora se o buffer de tx está cheio
     comandoBufIterator = 0;
     
     comandoBuf[comandoBufIterator] = getElevadorChar(comando.elevador);
-    if(comandoBuf[comandoBufIterator] != NULL)//elevador válido
+    if(comandoBuf[comandoBufIterator] != INVALIDO)//elevador válido
     {
         comandoBuf[++comandoBufIterator] = getComandoChar(comando.comando);
-        if(comandoBuf[comandoBufIterator] != NULL)//comando válido
+        if(comandoBuf[comandoBufIterator] != INVALIDO)//comando válido
         {
           if((comando.comando == ACENDE_BT) || (comando.comando == APAGA_BT)) // precisa da informação de botão
           {          
@@ -330,7 +337,7 @@ elevador_e getElevador(uint8_t c)
       break;
 
     default://TODO ERRO
-      return NULL;
+      return INVALIDO;
       break;
   }
 }
@@ -350,7 +357,7 @@ uint8_t getElevadorChar(elevador_e elevador)
       break;
 
     default://TODO ERRO
-      return NULL;
+      return INVALIDO;
       break;
   }
 } 
@@ -385,7 +392,7 @@ uint8_t getComandoChar(comando_e comando)
       break;
           
     default:
-      return NULL;
+      return INVALIDO;
       break;
       
   }
@@ -407,7 +414,7 @@ tipo_e getEvento(uint8_t c)
         return BT_EXT;
         break;              
       default:
-        return NULL;
+        return INVALIDO;
         break;
     }
 }

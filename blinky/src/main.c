@@ -44,8 +44,8 @@ void app_main (void *argument) {
   
 
 
-  uint8_t retorno = controleElevadorInit();
-  retorno = retorno && interfaceElevadorInit();
+  uint8_t retorno = interfaceElevadorInit();
+  retorno = retorno && controleElevadorInit();
   if(retorno == 0)
   {
     while(1);

@@ -5,151 +5,152 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\src\controleElevador.c</file>
-            <file>$PROJ_DIR$\ewarm\List\blinky.map</file>
-            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Library\IAR\RTX_CM4F.a</file>
-            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Include\rtx_os.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\src\controleElevador.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\main.o</file>
-            <file>$PROJ_DIR$\src\interface_elevador.c</file>
-            <file>$PROJ_DIR$\..\driverlib\ewarm\Exe\driverlib.a</file>
-            <file>$PROJ_DIR$\src\interface_elevador.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$PROJ_DIR$\src\RTX_Config.c</file>
-            <file>$PROJ_DIR$\src\RTX_Config.h</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
-            <file>$PROJ_DIR$\src\rtx_lib.c</file>
-            <file>$PROJ_DIR$\src\system_tm4c1294.c</file>
-            <file>$PROJ_DIR$\src\main.c</file>
-            <file>$PROJ_DIR$\src\startup_tm4c1294.s</file>
-            <file>$PROJ_DIR$\src\driverleds.c</file>
-            <file>$PROJ_DIR$\..\driverlib\sysctl.h</file>
-            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Include\rtx_evr.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Device\ARM\ARMCM4\Include\system_ARMCM4.h</file>
-            <file>$PROJ_DIR$\src\elevador.c</file>
-            <file>$PROJ_DIR$\ewarm\Exe\blinky.bin</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\src\uart_config.c</file>
-            <file>$PROJ_DIR$\ewarm\Obj\controleElevador.o</file>
-            <file>$PROJ_DIR$\src\system_tm4c1294.h</file>
-            <file>$PROJ_DIR$\src\uart_config.h</file>
-            <file>$PROJ_DIR$\src\elevador.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$PROJ_DIR$\..\CMSIS\RTOS2\Include\cmsis_os2.h</file>
-            <file>$PROJ_DIR$\src\driverleds.h</file>
-            <file>$PROJ_DIR$\..\driverlib\gpio.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\ewarm\Obj\blinky.pbd</file>
-            <file>$PROJ_DIR$\..\driverlib\uart.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\elevador.pbi</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm4.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.pbi</file>
-            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.o</file>
-            <file>$PROJ_DIR$\ewarm\Obj\uartConfig.pbi</file>
-            <file>$PROJ_DIR$\ewarm\Obj\elevador.o</file>
-            <file>$PROJ_DIR$\ewarm\Obj\uart_config.o</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\mpu_armv7.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\inc\hw_memmap.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\interface_elevador.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\ewarm\Exe\blinky.out</file>
-            <file>$PROJ_DIR$\..\Device\ARM\ARMCM4\Include\ARMCM4_FP.h</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\uart_config.pbi</file>
-            <file>$PROJ_DIR$\ewarm\Obj\controleElevador.pbi</file>
-            <file>$PROJ_DIR$\..\driverlib\pin_map.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\src\uartConfig.c</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C1294NC.icf</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\startup_tm4c1294.o</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverleds.o</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverleds.pbi</file>
-            <file>$PROJ_DIR$\ewarm\Obj\system_tm4c1294.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Library\IAR\IDE\RTE_Components.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.o</file>
             <file>$PROJ_DIR$\ewarm\Obj\system_tm4c1294.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\ewarm\Obj\uart_config.pbi</file>
+            <file>$PROJ_DIR$\src\RTX_Config.h</file>
             <file>$PROJ_DIR$\ewarm\Obj\interface_elevador.pbi</file>
+            <file>$PROJ_DIR$\ewarm\Obj\elevador.o</file>
+            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.o</file>
+            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Include\rtx_os.h</file>
+            <file>$PROJ_DIR$\..\Device\ARM\ARMCM4\Include\system_ARMCM4.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverleds.pbi</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\ewarm\Obj\system_tm4c1294.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\interface_elevador.o</file>
             <file>$PROJ_DIR$\ewarm\Obj\uartConfig.o</file>
+            <file>$PROJ_DIR$\ewarm\Obj\elevador.pbi</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\core_cm4.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Library\IAR\IDE\RTE_Components.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\driverlib\uart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\startup_tm4c1294.o</file>
+            <file>$PROJ_DIR$\..\driverlib\pin_map.h</file>
+            <file>$PROJ_DIR$\src\uartConfig.c</file>
+            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.pbi</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\mpu_armv7.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\..\Device\ARM\ARMCM4\Include\ARMCM4_FP.h</file>
+            <file>$PROJ_DIR$\..\CMSIS\RTOS2\Include\cmsis_os2.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C1294NC.icf</file>
+            <file>$PROJ_DIR$\ewarm\Exe\blinky.out</file>
+            <file>$PROJ_DIR$\ewarm\Obj\uartConfig.pbi</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverleds.o</file>
+            <file>$PROJ_DIR$\ewarm\Obj\controleElevador.pbi</file>
+            <file>$PROJ_DIR$\src\system_tm4c1294.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\src\main.c</file>
+            <file>$PROJ_DIR$\src\rtx_lib.c</file>
+            <file>$PROJ_DIR$\src\uart_config.h</file>
+            <file>$PROJ_DIR$\src\driverleds.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\src\driverleds.c</file>
+            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Include\rtx_evr.h</file>
+            <file>$PROJ_DIR$\..\driverlib\sysctl.h</file>
+            <file>$PROJ_DIR$\ewarm\List\blinky.map</file>
+            <file>$PROJ_DIR$\src\interface_elevador.h</file>
+            <file>$PROJ_DIR$\..\inc\hw_memmap.h</file>
+            <file>$TOOLKIT_DIR$\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\controleElevador.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\driverlib\gpio.h</file>
+            <file>$PROJ_DIR$\src\uart_config.c</file>
+            <file>$PROJ_DIR$\src\startup_tm4c1294.s</file>
+            <file>$PROJ_DIR$\ewarm\Exe\blinky.bin</file>
+            <file>$PROJ_DIR$\ewarm\Obj\uart_config.o</file>
+            <file>$PROJ_DIR$\ewarm\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\src\RTX_Config.c</file>
+            <file>$PROJ_DIR$\src\system_tm4c1294.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\ewarm\Obj\blinky.pbd</file>
+            <file>$PROJ_DIR$\..\CMSIS\RTOS2\RTX\Library\IAR\RTX_CM4F.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\src\controleElevador.h</file>
+            <file>$PROJ_DIR$\..\driverlib\ewarm\Exe\driverlib.a</file>
+            <file>$PROJ_DIR$\src\controleElevador.c</file>
+            <file>$PROJ_DIR$\src\elevador.c</file>
+            <file>$PROJ_DIR$\src\elevador.h</file>
+            <file>$PROJ_DIR$\src\interface_elevador.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\src\controleElevador.c</name>
+            <name>$PROJ_DIR$\src\uartConfig.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 27</file>
+                    <file> 15</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23 58 25 53 31 13 50 44 21 64 56</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ewarm\Exe\blinky.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
                     <file> 61</file>
                 </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 51</file>
+                </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 5 21 42 57 31 71 50 30 10 58 77 66 9 33 32</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 30 66 42 31 77 33 10 58 9 21 57 71 50 32 5</file>
+                    <name>ILINK</name>
+                    <file> 34 55 73 5 14 63 70 20 6 26 12 62 1 46 11 71</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\interface_elevador.c</name>
+            <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 52</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 75</file>
+                    <name>ILINK</name>
+                    <file> 35 51</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21 42 57 31 71 50 33 32 58 9 30 10 77 66 29</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 29 42 58 9 31 32 21 33 30 57 71 50 10 66 77</file>
-                </tool>
-            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\RTX_Config.c</name>
+            <name>$PROJ_DIR$\src\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 45</file>
+                    <file> 63</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 41</file>
+                    <file> 68</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 56 21 42 57 31 71 50 13 53 3 32 58 33</file>
+                    <file> 40 13 25 21 64 31 23 45 33 67 41 52 76 57 37 56 72</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57 50 71 53 33 42 3 21 13 31 58 56 32</file>
+                    <file> 21 13 72 23 25 33 31 76 45 52 64 67 41 40 57 56 37</file>
                 </tool>
             </inputs>
         </file>
@@ -158,67 +159,63 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 73</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 44</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 56 21 42 57 31 71 50 13 53 12 3 32 58 33 20 72</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 71 53 57 3 50 33 12 20 21 13 42 31 32 56 58 72</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\system_tm4c1294.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 70</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 74</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 66 21 42 57 31 71 50 19 55 43 59 56 13 53 49 22</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 43 55 57 31 19 21 53 42 71 50 22 59 56 49 13 66</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
                     <file> 6</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 4</file>
+                    <file> 29</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 28 21 42 57 31 71 50 34 33 32 58 9 30 10 77 66 5</file>
+                    <file> 10 13 25 21 64 31 23 54 47 3 7 67 41 33 49 19</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57 21 5 50 42 33 71 30 34 9 31 32 58 28 10 66 77</file>
+                    <file> 31 47 21 7 23 33 3 49 13 54 25 64 67 10 41 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\driverleds.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 58 23 53 31 13 50 45 21 64 56</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\uart_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56 13 25 21 64 31 23 53 50 27 58 24 44 33 67 41 45</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21 45 27 23 53 24 31 41 13 50 58 44 25 64 67 56 33</file>
                 </tool>
             </inputs>
         </file>
@@ -227,35 +224,62 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 67</file>
+                    <file> 26</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\driverleds.c</name>
+            <name>$PROJ_DIR$\src\RTX_Config.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 68</file>
+                    <file> 20</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 69</file>
+                    <file> 22</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 10 13 25 21 64 31 23 54 47 7 67 41 33</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 42 35 50 51 71 21 19 34 57 31 66</file>
+                    <file> 21 23 31 47 33 25 7 13 54 64 41 10 67</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\elevador.c</name>
+            <name>$PROJ_DIR$\src\system_tm4c1294.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 47</file>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56 13 25 21 64 31 23 50 32 18 17 10 54 47 30 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 32 21 64 50 13 47 25 31 23 8 17 10 30 54 56</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\controleElevador.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -265,81 +289,57 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 30 10 42 57 31 71 50 58 77 21 66</file>
+                    <file> 72 13 25 21 64 31 23 76 57 41 37 56 52 33 67</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57 66 42 10 58 31 30 21 77 71 50</file>
+                    <file> 13 31 37 33 21 23 25 52 76 64 57 56 41 67 72</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\src\uart_config.c</name>
+            <name>$PROJ_DIR$\src\elevador.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48</file>
+                    <file> 5</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 60</file>
+                    <file> 16</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 66 21 42 57 31 71 50 51 19 62 35 38 29 33 32 58 34</file>
+                    <file> 76 57 25 21 64 31 23 41 37 13 56</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57 34 62 50 51 38 71 58 21 19 35 29 42 31 32 66 33</file>
+                    <file> 21 56 25 57 41 64 76 13 37 31 23</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 54 1</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\ewarm\Exe\blinky.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 1</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 24</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 65 27 8 47 52 6 2 45 73 67 70 48 25 36 40 63</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\uartConfig.c</name>
+            <name>$PROJ_DIR$\src\interface_elevador.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 76</file>
+                    <file> 14</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 46</file>
+                    <file> 4</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 13 25 21 64 31 23 33 67 41 52 76 57 37 56 44</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 50 35 42 51 71 21 19 29 57 31 66</file>
+                    <file> 21 44 23 25 41 52 31 13 33 76 64 67 57 56 37</file>
                 </tool>
             </inputs>
         </file>

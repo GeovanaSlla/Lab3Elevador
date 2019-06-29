@@ -239,7 +239,7 @@
         "defdec": "Def",
         "display": "CENTRAL",
         "location": {
-          "column": "39",
+          "column": "35",
           "line": "17",
           "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\elevador.h"
         },
@@ -253,7 +253,7 @@
         "defdec": "Def",
         "display": "DIREITA",
         "location": {
-          "column": "48",
+          "column": "44",
           "line": "17",
           "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\elevador.h"
         },
@@ -6774,370 +6774,6 @@
     "scope": null
   },
   {
-    "ID": "c:DLib_Product.h@75@macro@_DLIB_PRODUCTS_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCTS_H_",
-    "location": {
-      "column": "9",
-      "line": "4",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCTS_H_",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@524@macro@_DLIB_WIDE_CHARACTERS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_WIDE_CHARACTERS",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_WIDE_CHARACTERS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@680@macro@_DLIB_PRODUCT_STRING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_STRING",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_STRING",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@831@macro@_DLIB_PRODUCT_FENV",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_FENV",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_FENV",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@984@macro@_DLIB_PRODUCT_STDLIB",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_PRODUCT_STDLIB",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_PRODUCT_STDLIB",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1095@macro@_DLIB_QSORT_BUF_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_QSORT_BUF_SIZE",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_QSORT_BUF_SIZE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1270@macro@_DLIB_SUPPORT_FOR_AEABI",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_SUPPORT_FOR_AEABI",
-    "location": {
-      "column": "9",
-      "line": "46",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_SUPPORT_FOR_AEABI",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1353@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "location": {
-      "column": "9",
-      "line": "49",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1479@macro@_DLIB_STRTOD_HEX_FLOAT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_STRTOD_HEX_FLOAT",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_STRTOD_HEX_FLOAT",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1833@macro@_USE_ATOMIC_OPS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_USE_ATOMIC_OPS",
-    "location": {
-      "column": "11",
-      "line": "65",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_USE_ATOMIC_OPS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@1929@macro@__SOFTFP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__SOFTFP",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "__SOFTFP",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2045@macro@__NO_SCRATCH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__NO_SCRATCH",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "__NO_SCRATCH",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2169@macro@_DLIB_SPEEDY_FLOATS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_SPEEDY_FLOATS",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_SPEEDY_FLOATS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2246@macro@_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2327@macro@_DLIB_ELF_INIT_STATIC_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_STATIC_BASE",
-    "location": {
-      "column": "9",
-      "line": "79",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_STATIC_BASE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2372@macro@_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "location": {
-      "column": "9",
-      "line": "80",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2467@macro@_DLIB_ELF_INIT_TABLE_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_TABLE_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "82",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_TABLE_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2517@macro@_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "83",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_SOURCE_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2567@macro@_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "location": {
-      "column": "9",
-      "line": "84",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2617@macro@_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "location": {
-      "column": "9",
-      "line": "85",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@2670@macro@_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "location": {
-      "column": "9",
-      "line": "86",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3098@macro@_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3510@macro@_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_ELF_INIT_INTERFACE_VERSION",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3556@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "location": {
-      "column": "9",
-      "line": "107",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3608@macro@_XMATHWRAPPERS_DEF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_XMATHWRAPPERS_DEF",
-    "location": {
-      "column": "9",
-      "line": "109",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_XMATHWRAPPERS_DEF",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Product.h@3657@macro@_CPPINIT_ATTR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_CPPINIT_ATTR",
-    "location": {
-      "column": "9",
-      "line": "111",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
-    },
-    "name": "_CPPINIT_ATTR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:stdlib.h@102@macro@_STDLIB",
     "What": "MacroDef",
     "defdec": "Def",
@@ -8446,13 +8082,27 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@6317@F@threadControlaElevador@i",
+    "ID": "c:controleElevador.c@3777@F@threadControlaElevador@andarFinal",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "andarFinal",
+    "location": {
+      "column": "29",
+      "line": "98",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
+    },
+    "name": "andarFinal",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:controleElevador.c@8840@F@threadControlaElevador@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "37",
-      "line": "151",
+      "line": "199",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8460,13 +8110,13 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@7007@F@threadControlaElevador@i",
+    "ID": "c:controleElevador.c@9530@F@threadControlaElevador@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "37",
-      "line": "162",
+      "line": "210",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8474,13 +8124,13 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@7905@F@threadControlaElevador@i",
+    "ID": "c:controleElevador.c@10454@F@threadControlaElevador@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "37",
-      "line": "178",
+      "line": "227",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8488,13 +8138,13 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@8588@F@threadControlaElevador@i",
+    "ID": "c:controleElevador.c@11137@F@threadControlaElevador@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "37",
-      "line": "189",
+      "line": "238",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8508,7 +8158,7 @@
     "display": "uint8_t controleElevadorInit(void)",
     "location": {
       "column": "9",
-      "line": "241",
+      "line": "293",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "controleElevadorInit",
@@ -8516,13 +8166,27 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@11458@F@controleElevadorInit@i",
+    "ID": "c:controleElevador.c@14160@F@controleElevadorInit@comandoElevadorBuffer",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "comandoElevadorBuffer",
+    "location": {
+      "column": "23",
+      "line": "295",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
+    },
+    "name": "comandoElevadorBuffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:controleElevador.c@14332@F@controleElevadorInit@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "247",
+      "line": "300",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8530,13 +8194,13 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@11683@F@controleElevadorInit@i",
+    "ID": "c:controleElevador.c@14557@F@controleElevadorInit@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "254",
+      "line": "307",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "i",
@@ -8544,17 +8208,381 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.c@11822@F@controleElevadorInit@j",
+    "ID": "c:controleElevador.c@14696@F@controleElevadorInit@j",
     "What": "Variable",
     "defdec": "Def",
     "display": "j",
     "location": {
       "column": "21",
-      "line": "258",
+      "line": "311",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.c"
     },
     "name": "j",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@75@macro@_DLIB_PRODUCTS_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCTS_H_",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCTS_H_",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@524@macro@_DLIB_WIDE_CHARACTERS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_WIDE_CHARACTERS",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_WIDE_CHARACTERS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@680@macro@_DLIB_PRODUCT_STRING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_STRING",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_STRING",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@831@macro@_DLIB_PRODUCT_FENV",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_FENV",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_FENV",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@984@macro@_DLIB_PRODUCT_STDLIB",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRODUCT_STDLIB",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_PRODUCT_STDLIB",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1095@macro@_DLIB_QSORT_BUF_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_QSORT_BUF_SIZE",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_QSORT_BUF_SIZE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1270@macro@_DLIB_SUPPORT_FOR_AEABI",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_SUPPORT_FOR_AEABI",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_SUPPORT_FOR_AEABI",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1353@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1479@macro@_DLIB_STRTOD_HEX_FLOAT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_STRTOD_HEX_FLOAT",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_STRTOD_HEX_FLOAT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1833@macro@_USE_ATOMIC_OPS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_USE_ATOMIC_OPS",
+    "location": {
+      "column": "11",
+      "line": "65",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_USE_ATOMIC_OPS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@1929@macro@__SOFTFP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__SOFTFP",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "__SOFTFP",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2045@macro@__NO_SCRATCH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__NO_SCRATCH",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "__NO_SCRATCH",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2169@macro@_DLIB_SPEEDY_FLOATS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_SPEEDY_FLOATS",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_SPEEDY_FLOATS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2246@macro@_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_STATIC_BASE_DECLARATION",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2327@macro@_DLIB_ELF_INIT_STATIC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_STATIC_BASE",
+    "location": {
+      "column": "9",
+      "line": "79",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_STATIC_BASE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2372@macro@_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "location": {
+      "column": "9",
+      "line": "80",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_FUNCTION_ATTRIBUTES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2467@macro@_DLIB_ELF_INIT_TABLE_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_TABLE_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_TABLE_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2517@macro@_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_SOURCE_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2567@macro@_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "location": {
+      "column": "9",
+      "line": "84",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_DESTINATION_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2617@macro@_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_USE_RELATIVE_ROM_ADDRESSES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@2670@macro@_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "location": {
+      "column": "9",
+      "line": "86",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_REGION_COUNT_TYPE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3098@macro@_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_MODULE_ATTRIBUTES",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3510@macro@_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_ELF_INIT_INTERFACE_VERSION",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3556@macro@_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "location": {
+      "column": "9",
+      "line": "107",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_DLIB_USE_RTMODEL_JMP_BUF_NUM_ELEMENTS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3608@macro@_XMATHWRAPPERS_DEF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_XMATHWRAPPERS_DEF",
+    "location": {
+      "column": "9",
+      "line": "109",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_XMATHWRAPPERS_DEF",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Product.h@3657@macro@_CPPINIT_ATTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_CPPINIT_ATTR",
+    "location": {
+      "column": "9",
+      "line": "111",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Product.h"
+    },
+    "name": "_CPPINIT_ATTR",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -8810,48 +8838,6 @@
     "scope": null
   },
   {
-    "ID": "c:controleElevador.h@38@macro@_CONTROLEELEVADOR_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_CONTROLEELEVADOR_H_",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
-    },
-    "name": "_CONTROLEELEVADOR_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@controleElevadorInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t controleElevadorInit(void)",
-    "location": {
-      "column": "9",
-      "line": "8",
-      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
-    },
-    "name": "controleElevadorInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@controleElevadorInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t controleElevadorInit(void)",
-    "location": {
-      "column": "9",
-      "line": "8",
-      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
-    },
-    "name": "controleElevadorInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:stddef.h@100@macro@_STDDEF",
     "What": "MacroDef",
     "defdec": "Def",
@@ -9061,6 +9047,48 @@
     },
     "name": "max_align_t",
     "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:controleElevador.h@38@macro@_CONTROLEELEVADOR_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_CONTROLEELEVADOR_H_",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
+    },
+    "name": "_CONTROLEELEVADOR_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@controleElevadorInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t controleElevadorInit(void)",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
+    },
+    "name": "controleElevadorInit",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@controleElevadorInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t controleElevadorInit(void)",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\controleElevador.h"
+    },
+    "name": "controleElevadorInit",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -9548,6 +9576,20 @@
     "scope": null
   },
   {
+    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_CONFIG_H",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Config_Normal.h"
+    },
+    "name": "_DLIB_CONFIG_H",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
     "ID": "c:stdbool.h@96@macro@_STDBOOL",
     "What": "MacroDef",
     "defdec": "Def",
@@ -9614,20 +9656,6 @@
       "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\stdbool.h"
     },
     "name": "__bool_true_false_are_defined",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_CONFIG_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.2\\arm\\inc\\c\\DLib_Config_Normal.h"
-    },
-    "name": "_DLIB_CONFIG_H",
     "origin": "system_include",
     "scope": null
   },
@@ -9912,13 +9940,41 @@
     "scope": null
   },
   {
+    "ID": "c:interface_elevador.c@359@macro@INVALIDO",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "INVALIDO",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
+    },
+    "name": "INVALIDO",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:interface_elevador.c@385@macro@PRIO_INTERFACE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PRIO_INTERFACE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
+    },
+    "name": "PRIO_INTERFACE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@rxBuf",
     "What": "Variable",
     "defdec": "Dec",
     "display": "rxBuf",
     "location": {
       "column": "9",
-      "line": "13",
+      "line": "17",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "rxBuf",
@@ -9932,7 +9988,7 @@
     "display": "txBuf",
     "location": {
       "column": "9",
-      "line": "14",
+      "line": "18",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "txBuf",
@@ -9946,7 +10002,7 @@
     "display": "rxWrIterator",
     "location": {
       "column": "9",
-      "line": "15",
+      "line": "19",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "rxWrIterator",
@@ -9960,7 +10016,7 @@
     "display": "txRdIterator",
     "location": {
       "column": "9",
-      "line": "16",
+      "line": "20",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "txRdIterator",
@@ -9974,7 +10030,7 @@
     "display": "txWrIterator",
     "location": {
       "column": "9",
-      "line": "17",
+      "line": "21",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "txWrIterator",
@@ -9988,7 +10044,7 @@
     "display": "threadInterfaceElevadorID",
     "location": {
       "column": "14",
-      "line": "20",
+      "line": "24",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterfaceElevadorID",
@@ -10002,7 +10058,7 @@
     "display": "threadInterpretaEventoID",
     "location": {
       "column": "14",
-      "line": "21",
+      "line": "25",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterpretaEventoID",
@@ -10016,7 +10072,7 @@
     "display": "threadMontaComandoID",
     "location": {
       "column": "14",
-      "line": "22",
+      "line": "26",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadMontaComandoID",
@@ -10030,7 +10086,7 @@
     "display": "queueEventosElevadorID",
     "location": {
       "column": "20",
-      "line": "24",
+      "line": "28",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "queueEventosElevadorID",
@@ -10044,7 +10100,7 @@
     "display": "queueComandosElevadorID",
     "location": {
       "column": "20",
-      "line": "25",
+      "line": "29",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "queueComandosElevadorID",
@@ -10058,7 +10114,7 @@
     "display": "void threadInterfaceElevador(void *)",
     "location": {
       "column": "13",
-      "line": "27",
+      "line": "31",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterfaceElevador",
@@ -10072,7 +10128,7 @@
     "display": "void threadInterpretaEvento(void *)",
     "location": {
       "column": "13",
-      "line": "28",
+      "line": "32",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterpretaEvento",
@@ -10086,7 +10142,7 @@
     "display": "void threadMontaComando(void *)",
     "location": {
       "column": "13",
-      "line": "29",
+      "line": "33",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadMontaComando",
@@ -10100,7 +10156,7 @@
     "display": "elevador_e getElevador(uint8_t)",
     "location": {
       "column": "13",
-      "line": "31",
+      "line": "35",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getElevador",
@@ -10114,7 +10170,7 @@
     "display": "tipo_e getEvento(uint8_t)",
     "location": {
       "column": "13",
-      "line": "32",
+      "line": "36",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getEvento",
@@ -10128,7 +10184,7 @@
     "display": "uint8_t getElevadorChar(elevador_e)",
     "location": {
       "column": "13",
-      "line": "33",
+      "line": "37",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getElevadorChar",
@@ -10142,7 +10198,7 @@
     "display": "uint8_t getComandoChar(comando_e)",
     "location": {
       "column": "13",
-      "line": "34",
+      "line": "38",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getComandoChar",
@@ -10156,7 +10212,7 @@
     "display": "uint8_t interfaceElevadorInit(void)",
     "location": {
       "column": "9",
-      "line": "36",
+      "line": "40",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "interfaceElevadorInit",
@@ -10170,7 +10226,7 @@
     "display": "void threadInterfaceElevador(void *)",
     "location": {
       "column": "6",
-      "line": "79",
+      "line": "86",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterfaceElevador",
@@ -10178,13 +10234,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@2620@F@threadInterfaceElevador@flag",
+    "ID": "c:interface_elevador.c@2883@F@threadInterfaceElevador@flag",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag",
     "location": {
       "column": "16",
-      "line": "84",
+      "line": "91",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "flag",
@@ -10192,13 +10248,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@2752@F@threadInterfaceElevador@c",
+    "ID": "c:interface_elevador.c@3015@F@threadInterfaceElevador@c",
     "What": "Variable",
     "defdec": "Def",
     "display": "c",
     "location": {
       "column": "17",
-      "line": "90",
+      "line": "97",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "c",
@@ -10212,7 +10268,7 @@
     "display": "void threadInterpretaEvento(void *)",
     "location": {
       "column": "6",
-      "line": "134",
+      "line": "141",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadInterpretaEvento",
@@ -10220,13 +10276,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@4185@F@threadInterpretaEvento@evento",
+    "ID": "c:interface_elevador.c@4448@F@threadInterpretaEvento@evento",
     "What": "Variable",
     "defdec": "Def",
     "display": "evento",
     "location": {
       "column": "22",
-      "line": "140",
+      "line": "147",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "evento",
@@ -10234,13 +10290,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@4234@F@threadInterpretaEvento@i",
+    "ID": "c:interface_elevador.c@4509@F@threadInterpretaEvento@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "13",
-      "line": "141",
+      "line": "148",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "i",
@@ -10254,7 +10310,7 @@
     "display": "void threadMontaComando(void *)",
     "location": {
       "column": "6",
-      "line": "251",
+      "line": "258",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "threadMontaComando",
@@ -10262,13 +10318,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@7621@F@threadMontaComando@comando",
+    "ID": "c:interface_elevador.c@7904@F@threadMontaComando@comando",
     "What": "Variable",
     "defdec": "Def",
     "display": "comando",
     "location": {
       "column": "21",
-      "line": "253",
+      "line": "260",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "comando",
@@ -10276,13 +10332,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@7651@F@threadMontaComando@comandoBuf",
+    "ID": "c:interface_elevador.c@7934@F@threadMontaComando@comandoBuf",
     "What": "Variable",
     "defdec": "Def",
     "display": "comandoBuf",
     "location": {
       "column": "11",
-      "line": "254",
+      "line": "261",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "comandoBuf",
@@ -10290,13 +10346,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@7692@F@threadMontaComando@comandoBufIterator",
+    "ID": "c:interface_elevador.c@7975@F@threadMontaComando@comandoBufIterator",
     "What": "Variable",
     "defdec": "Def",
     "display": "comandoBufIterator",
     "location": {
       "column": "11",
-      "line": "255",
+      "line": "262",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "comandoBufIterator",
@@ -10304,13 +10360,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@8611@F@threadMontaComando@i",
+    "ID": "c:interface_elevador.c@8902@F@threadMontaComando@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "23",
-      "line": "274",
+      "line": "281",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "i",
@@ -10318,13 +10374,13 @@
     "scope": null
   },
   {
-    "ID": "c:interface_elevador.c@9336@F@threadMontaComando@i",
+    "ID": "c:interface_elevador.c@9627@F@threadMontaComando@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "21",
-      "line": "295",
+      "line": "302",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "i",
@@ -10338,7 +10394,7 @@
     "display": "elevador_e getElevador(uint8_t)",
     "location": {
       "column": "12",
-      "line": "318",
+      "line": "325",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getElevador",
@@ -10352,7 +10408,7 @@
     "display": "uint8_t getElevadorChar(elevador_e)",
     "location": {
       "column": "9",
-      "line": "338",
+      "line": "345",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getElevadorChar",
@@ -10366,7 +10422,7 @@
     "display": "uint8_t getComandoChar(comando_e)",
     "location": {
       "column": "9",
-      "line": "358",
+      "line": "365",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getComandoChar",
@@ -10380,7 +10436,7 @@
     "display": "tipo_e getEvento(uint8_t)",
     "location": {
       "column": "8",
-      "line": "393",
+      "line": "400",
       "path": "E:\\UTFPR\\9\u00ba Per\u00edodo\\Embarcados\\Projetos\\Lab3Elevador\\Lab3Elevador\\blinky\\src\\interface_elevador.c"
     },
     "name": "getEvento",

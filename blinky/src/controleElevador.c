@@ -93,20 +93,62 @@ void threadControlaElevador(void *arg)
         switch (flagDisparada)
         {
             case FLAG_EMBARQUE:
-                vetorElevadores[elevador].paradas_descida[valor] = EMBARQUE;
-                if(vetorElevadores[elevador].mov == PARADO)
+                if(vetorElevadores[elevador].mov == SUBINDO)
                 {
+                    uint8_t andarFinal = getDestinoFinal(elevador);
+                    if(andarFinal > valor)
+                    {
+                        vetorElevadores[elevador].paradas_descida[valor] = EMBARQUE;
+                    }
+                    else
+                    {
+                        vetorElevadores[elevador].paradas_subida[valor] = EMBARQUE;
+                    }
+                }
+                else if(vetorElevadores[elevador].mov == DESCENDO)
+                {
+                    if(vetorElevadores[elevador].pos == 0)
+                    {
+                        comandoElevadorBuffer.elevador = elevador;
+                        comandoElevadorBuffer.comando = FECHA_PORTA;
+                        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+                    }
                     if(vetorElevadores[elevador].pos < valor)
                     {
+                        vetorElevadores[elevador].paradas_subida[valor] = EMBARQUE;
+                    }
+                    else
+                    {
+                        vetorElevadores[elevador].paradas_subida[valor] = EMBARQUE;
+                    }
+                }
+                else if(vetorElevadores[elevador].mov == PARADO)
+                {
+//                    if(vetorElevadores[elevador].pos == 0)
+//                    {
+//                        comandoElevadorBuffer.elevador = elevador;
+//                        comandoElevadorBuffer.comando = FECHA_PORTA;
+//                        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+//                    }
+                    if(vetorElevadores[elevador].pos < valor)
+                    {
+                        vetorElevadores[elevador].paradas_subida[valor] = EMBARQUE;
                         vetorElevadores[elevador].mov = SUBINDO;
                         comandoElevadorBuffer.comando = SOBE;
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
                     }
-                    else
+                    else if(vetorElevadores[elevador].pos > valor)
                     {
+                        vetorElevadores[elevador].paradas_descida[valor] = EMBARQUE;
                         vetorElevadores[elevador].mov = DESCENDO;
                         comandoElevadorBuffer.comando = DESCE;
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+                    }
+                    else
+                    {
+                        comandoElevadorBuffer.elevador = elevador;
+                        comandoElevadorBuffer.comando = ABRE_PORTA;
+                        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever); 
                     }
                 }
                 break;
@@ -123,6 +165,11 @@ void threadControlaElevador(void *arg)
                 comandoElevadorBuffer.valor = valor;
                 comandoElevadorBuffer.elevador = elevador;
                 osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+//                if(vetorElevadores[elevador].pos == 0)
+//                {
+//                    comandoElevadorBuffer.comando = FECHA_PORTA;
+//                    osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+//                }
                 if(vetorElevadores[elevador].mov == PARADO)
                 {
                     if(vetorElevadores[elevador].pos < valor)
@@ -140,7 +187,7 @@ void threadControlaElevador(void *arg)
                 }
                 break;
             case FLAG_PORTA:
-                if(valor == VALOR_PORTA_ABERTA)
+                if(valor == VALOR_PORTA_ABERTA) //&& vetorElevadores[elevador].pos!=0)
                 {
                     osTimerStart(timerFechaPorta[elevador], TEMPO_PORTA_ABERTA);
                 }
@@ -148,6 +195,7 @@ void threadControlaElevador(void *arg)
                 {
                     if(vetorElevadores[elevador].mov == SUBINDO)
                     {
+                        vetorElevadores[elevador].mov = PARADO;
                         for(uint8_t i = vetorElevadores[elevador].pos + 1; i <= NUM_ANDARES; i++)
                         {
                             if(vetorElevadores[elevador].paradas_subida[i] != NAO_DEVE_PARAR)
@@ -159,7 +207,7 @@ void threadControlaElevador(void *arg)
                                 break;
                             }
                         }
-                        for(uint8_t i = vetorElevadores[elevador].pos - 1; i >= 1; i++)
+                        for(uint8_t i = vetorElevadores[elevador].pos - 1; i >= 1; i--)
                         {
                             if(vetorElevadores[elevador].paradas_descida[i] != NAO_DEVE_PARAR)
                             {
@@ -170,12 +218,13 @@ void threadControlaElevador(void *arg)
                                 break;
                             }
                         }
-                        vetorElevadores[elevador].mov = PARADO;
+                        
                         break;
                     }
                     else if(vetorElevadores[elevador].mov == DESCENDO)
                     {
-                        for(uint8_t i = vetorElevadores[elevador].pos - 1; i >= 1; i++)
+                        vetorElevadores[elevador].mov = PARADO;
+                        for(uint8_t i = vetorElevadores[elevador].pos - 1; i >= 1; i--)
                         {
                             if(vetorElevadores[elevador].paradas_descida[i] != NAO_DEVE_PARAR)
                             {
@@ -197,7 +246,6 @@ void threadControlaElevador(void *arg)
                                 break;
                             }
                         }
-                        vetorElevadores[elevador].mov = PARADO;
                         break;
                     }
                 }
@@ -213,8 +261,10 @@ void threadControlaElevador(void *arg)
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
                         vetorElevadores[elevador].paradas_descida[valor] = NAO_DEVE_PARAR;
                         comandoElevadorBuffer.comando = ABRE_PORTA;
-                        comandoElevadorBuffer.elevador = elevador;
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever); 
+                        comandoElevadorBuffer.comando = APAGA_BT;
+                        comandoElevadorBuffer.valor = valor;
+                        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
                     }
                     break;
                 }
@@ -227,7 +277,9 @@ void threadControlaElevador(void *arg)
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
                         vetorElevadores[elevador].paradas_subida[valor] = NAO_DEVE_PARAR;
                         comandoElevadorBuffer.comando = ABRE_PORTA;
-                        comandoElevadorBuffer.elevador = elevador;
+                        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
+                        comandoElevadorBuffer.comando = APAGA_BT;
+                        comandoElevadorBuffer.valor = valor;
                         osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
                     }
                     break;
@@ -240,6 +292,7 @@ void threadControlaElevador(void *arg)
 }
 uint8_t controleElevadorInit()
 {
+    comandoElevador_t comandoElevadorBuffer;
     if((threadDistribuidoraID = osThreadNew(threadDistribuidora, NULL, NULL)) == NULL)
     {
         return 0;
@@ -260,6 +313,9 @@ uint8_t controleElevadorInit()
             vetorElevadores[i].paradas_descida[j] = NAO_DEVE_PARAR;
             vetorElevadores[i].paradas_subida[j] = NAO_DEVE_PARAR;
         }
+        comandoElevadorBuffer.elevador = i;
+        comandoElevadorBuffer.comando = INICIALIZA;
+        osMessageQueuePut(queueComandosElevadorID, &comandoElevadorBuffer, 0, osWaitForever);
     }
     return 1;
 }
